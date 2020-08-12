@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ArbolQaComponent } from './arbol-qa.component';
+import { MainContainerComponent } from './main-container.component';
 
-describe('ArbolQaComponent', () => {
-  let component: ArbolQaComponent;
-  let fixture: ComponentFixture<ArbolQaComponent>;
+describe('MainContainerComponent', () => {
+  let component: MainContainerComponent;
+  let fixture: ComponentFixture<MainContainerComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ArbolQaComponent ]
+      declarations: [ MainContainerComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ArbolQaComponent);
+    fixture = TestBed.createComponent(MainContainerComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
