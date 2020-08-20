@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ArbolQaComponent } from './arbol-qa.component';
+import { XviewSoporte01Component } from './xview-soporte01.component';
 
-describe('ArbolQaComponent', () => {
-  let component: ArbolQaComponent;
-  let fixture: ComponentFixture<ArbolQaComponent>;
+describe('XviewSoporte01Component', () => {
+  let component: XviewSoporte01Component;
+  let fixture: ComponentFixture<XviewSoporte01Component>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ArbolQaComponent ]
+      declarations: [ XviewSoporte01Component ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ArbolQaComponent);
+    fixture = TestBed.createComponent(XviewSoporte01Component);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

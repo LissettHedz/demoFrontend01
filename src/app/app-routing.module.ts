@@ -6,15 +6,14 @@ import {PagesLayoutComponent} from './Layout/pages-layout/pages-layout.component
 
 // DEMO PAGES
 
-// Dashboards
-
-import {AnalyticsComponent} from './DemoPages/Dashboards/analytics/analytics.component';
-
 // Pages
 
 import {ForgotPasswordBoxedComponent} from './DemoPages/UserPages/forgot-password-boxed/forgot-password-boxed.component';
 import {LoginBoxedComponent} from './DemoPages/UserPages/login-boxed/login-boxed.component';
 import {RegisterBoxedComponent} from './DemoPages/UserPages/register-boxed/register-boxed.component';
+
+
+
 
 // Elements
 
@@ -34,6 +33,7 @@ import {ModalsComponent} from './DemoPages/Components/modals/modals.component';
 import {ProgressBarComponent} from './DemoPages/Components/progress-bar/progress-bar.component';
 import {PaginationComponent} from './DemoPages/Components/pagination/pagination.component';
 import {TooltipsPopoversComponent} from './DemoPages/Components/tooltips-popovers/tooltips-popovers.component';
+import {AnalyticsComponent} from './DemoPages/Dashboards/analytics/analytics.component';
 
 // Tables
 
@@ -55,6 +55,12 @@ import {ChartjsComponent} from './DemoPages/Charts/chartjs/chartjs.component';
 // MegacablePages
 import {InicioComponent} from './ccn/pages/inicio/inicio.component';
 
+// MegacableSoportes
+import { MainContainerComponent } from './ccn/soportes/soportes-ui/shared/main-container/main-container.component';
+import { XviewSoporte01Component } from './ccn/soportes/soportes-ui/television/xview-soporte01/xview-soporte01.component';
+
+
+
 
 
 const routes: Routes = [
@@ -66,13 +72,14 @@ const routes: Routes = [
       // MegacablePages
       {path: 'pages/inicio', component: InicioComponent},
 
-
       // MegacableSoportes
+      {path: 'soportes/mainPrincipal', component: MainContainerComponent},
+      {path: 'soportes/XviewSoporte01', component: XviewSoporte01Component},
 
 
       // Dashboads
 
-      {path: '', component: AnalyticsComponent, data: {extraParameter: 'dashboardsMenu'}},
+      {path: '', component: InicioComponent, data: {extraParameter: 'inicioMenu'}},
 
       // Elements
 
@@ -92,6 +99,7 @@ const routes: Routes = [
       {path: 'components/tooltips-popovers', component: TooltipsPopoversComponent, data: {extraParameter: 'componentsMenu'}},
       {path: 'components/carousel', component: CarouselComponent, data: {extraParameter: 'componentsMenu'}},
       {path: 'components/pagination', component: PaginationComponent, data: {extraParameter: 'componentsMenu'}},
+      {path: 'components/dashboard', component: AnalyticsComponent, data: {extraParameter: 'dashboardMenu'}},
 
       // Tables
 
