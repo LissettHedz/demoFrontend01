@@ -12,6 +12,9 @@ import {ForgotPasswordBoxedComponent} from './DemoPages/UserPages/forgot-passwor
 import {LoginBoxedComponent} from './DemoPages/UserPages/login-boxed/login-boxed.component';
 import {RegisterBoxedComponent} from './DemoPages/UserPages/register-boxed/register-boxed.component';
 
+
+
+
 // Elements
 
 import {StandardComponent} from './DemoPages/Elements/Buttons/standard/standard.component';
@@ -53,7 +56,11 @@ import {ChartjsComponent} from './DemoPages/Charts/chartjs/chartjs.component';
 import {InicioComponent} from './ccn/pages/inicio/inicio.component';
 
 // MegacableSoportes
-import {MenuPrincipalComponent} from './ccn/soportes/menu-principal/menu-principal.component';
+import { MainContainerComponent } from './ccn/soportes/soportes-ui/shared/main-container/main-container.component';
+import { XviewSoporte01Component } from './ccn/soportes/soportes-ui/television/xview-soporte01/xview-soporte01.component';
+
+
+
 
 
 const routes: Routes = [
@@ -66,7 +73,9 @@ const routes: Routes = [
       {path: 'pages/inicio', component: InicioComponent},
 
       // MegacableSoportes
-      {path: 'soportes/menu-principal', component: MenuPrincipalComponent},
+      {path: 'soportes/mainPrincipal', component: MainContainerComponent},
+      {path: 'soportes/XviewSoporte01', component: XviewSoporte01Component},
+
 
       // Dashboads
 

@@ -1,3 +1,64 @@
-<p>
-  inicio works!
-</p>
+<app-page-title [heading]="heading" [subheading]="subheading" [icon]="icon"></app-page-title>
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="main-card mb-3 card">
+      <div class="card-body" *ngFor="let data of Datas">
+        <h5 class="card-title">{{data.buscarSuscriptor}}</h5>
+          <form>
+            <div class="form-row">
+            <div class="col-md-6">
+            <div class="position-relative form-group">
+              <label for="sucursal">{{data.sucursal}}</label>
+                <select name="sucursal" id="sucursal" class="form-control">
+                  <option>41 - Guadalajara</option>
+                  <option>12 - Tepic</option>
+                  <option>15 - Xalisco</option>
+                </select>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="position-relative form-group">
+              <label for="suscriptor">{{data.sucursal}}</label>
+                <input  name="suscriptor"
+                        id="suscriptor"
+                        placeholder="ingresar el número de suscriptor"
+                        type="text"
+                        class="form-control">
+            </div>
+          </div>
+        </div>
+            <div class="position-relative form-group">
+              <label for="nombre">{{data.nombre}}</label>
+                <input  name="nombre"
+                        id="nombre"
+                        placeholder="ingresar el o los nombres del titular"
+                        type="text"
+                        class="form-control">
+            </div>
+            <div class="position-relative form-group">
+              <label for="apellidoPaterno">{{data.apellidoPaterno}}</label>
+                <input  name="apellidoPaterno" 
+                        id="apellidoPaterno" 
+                        placeholder="ingresar el apellido paterno" 
+                        type="text"
+                        class="form-control">
+            </div>
+            <div class="position-relative form-group">
+              <label for="apellidoMaterno">{{data.apellidoMaterno}}</label>
+                <input  name="apellidoMaterno" 
+                        id="apellidoMaterno" 
+                        placeholder="ingresar el apellido materno" 
+                        type="text"
+                        class="form-control">
+            </div>
+          <a  routerLink="/soportes/mainPrincipal" 
+              class="mt-1 btn btn-primary" 
+              *ngFor="let boton of Botones">
+              {{boton.buscar}}
+          </a>
+        </form>       
+
+      </div>
+    </div>
+  </div>

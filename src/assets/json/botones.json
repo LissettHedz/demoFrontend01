@@ -1,0 +1,23 @@
+[
+    {
+      "buscar":"Buscar",
+      "enviar":"Enviar",
+      "unServicio":"Un Servicio",
+      "dosServicio":"Dos Servicio",
+      "tresServicio":"Tres Servicio",
+      "tv":"Televisión",
+      "inter":"Internet",
+      "tel":"Telefonía",
+      "tvEinter":"Televisión - Internet",
+      "tvYtel":"Televisión - Telefonía",
+      "telEinter":"Internet - Telefonía",
+      "analogo":"Servicio Análogo",
+      "digital":"Servicio Digital",
+      "dto101":"Dto-101",
+      "pds1100":"Pds-1100",
+      "pds2140":"Pds-2140",
+      "xview":"xview",
+      "soporte":"Iniciar soporte"
+    }
+
+ ]
