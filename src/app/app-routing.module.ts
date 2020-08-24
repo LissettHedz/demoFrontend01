@@ -54,6 +54,7 @@ import {ChartjsComponent} from './DemoPages/Charts/chartjs/chartjs.component';
 
 // MegacablePages
 import {InicioComponent} from './ccn/pages/inicio/inicio.component';
+import {ArbolQaComponent} from './ccn/pages/arbol-qa/arbol-qa.component';
 
 // MegacableSoportes
 import { MainContainerComponent } from './ccn/soportes/soportes-ui/shared/main-container/main-container.component';
@@ -71,6 +72,7 @@ const routes: Routes = [
 
       // MegacablePages
       {path: 'pages/inicio', component: InicioComponent},
+      {path: 'pages/arbolQa', component: ArbolQaComponent},
 
       // MegacableSoportes
       {path: 'soportes/mainPrincipal', component: MainContainerComponent},
@@ -133,7 +135,7 @@ const routes: Routes = [
       {path: 'pages/forgot-password-boxed', component: ForgotPasswordBoxedComponent, data: {extraParameter: ''}},
     ]
   },
-  {path: '**', pathMatch: 'full', redirectTo: 'pages/inicio'}
+  {path: '**', pathMatch: 'full', redirectTo: '/pages/inicio'}
 ];
 
 @NgModule({
