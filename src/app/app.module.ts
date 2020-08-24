@@ -104,10 +104,13 @@ import {DynamicChartComponent} from './DemoPages/Charts/chartjs/examples/dynamic
 import {DoughnutChartComponent} from './DemoPages/Charts/chartjs/examples/doughnut-chart/doughnut-chart.component';
 import {PieChartComponent} from './DemoPages/Charts/chartjs/examples/pie-chart/pie-chart.component';
 
-// Megacable
+// Megacable Pages
 import { InicioComponent } from './ccn/pages/inicio/inicio.component';
-import { MainContainerComponent } from './ccn/soportes/soportes-ui/shared/main-container/main-container.component';
 import { DemoComponent } from './ccn/pages/demo/demo.component';
+import { ArbolQaComponent } from './ccn/pages/arbol-qa/arbol-qa.component';
+
+// Megacable Soportes
+import { MainContainerComponent } from './ccn/soportes/soportes-ui/shared/main-container/main-container.component';
 import { XviewSoporte01Component } from './ccn/soportes/soportes-ui/television/xview-soporte01/xview-soporte01.component';
 
 
@@ -201,9 +204,12 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     BubbleChartComponent,
     ScatterChartComponent,
 
-    // Megacable
+    // Megacable Pages
     InicioComponent,
     DemoComponent,
+    ArbolQaComponent,
+
+    // Megacable Soportes
     MainContainerComponent,
     XviewSoporte01Component,
   ],
