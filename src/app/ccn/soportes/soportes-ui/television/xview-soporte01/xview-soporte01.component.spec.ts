@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MenuPrincipalComponent } from './menu-principal.component';
+import { XviewSoporte01Component } from './xview-soporte01.component';
 
-describe('MenuPrincipalComponent', () => {
-  let component: MenuPrincipalComponent;
-  let fixture: ComponentFixture<MenuPrincipalComponent>;
+describe('XviewSoporte01Component', () => {
+  let component: XviewSoporte01Component;
+  let fixture: ComponentFixture<XviewSoporte01Component>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ MenuPrincipalComponent ]
+      declarations: [ XviewSoporte01Component ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MenuPrincipalComponent);
+    fixture = TestBed.createComponent(XviewSoporte01Component);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

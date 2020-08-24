@@ -12,6 +12,9 @@ import {ForgotPasswordBoxedComponent} from './DemoPages/UserPages/forgot-passwor
 import {LoginBoxedComponent} from './DemoPages/UserPages/login-boxed/login-boxed.component';
 import {RegisterBoxedComponent} from './DemoPages/UserPages/register-boxed/register-boxed.component';
 
+
+
+
 // Elements
 
 import {StandardComponent} from './DemoPages/Elements/Buttons/standard/standard.component';
@@ -51,9 +54,14 @@ import {ChartjsComponent} from './DemoPages/Charts/chartjs/chartjs.component';
 
 // MegacablePages
 import {InicioComponent} from './ccn/pages/inicio/inicio.component';
+import {ArbolQaComponent} from './ccn/pages/arbol-qa/arbol-qa.component';
 
 // MegacableSoportes
-import {MenuPrincipalComponent} from './ccn/soportes/menu-principal/menu-principal.component';
+import { MainContainerComponent } from './ccn/soportes/soportes-ui/shared/main-container/main-container.component';
+import { XviewSoporte01Component } from './ccn/soportes/soportes-ui/television/xview-soporte01/xview-soporte01.component';
+
+
+
 
 
 const routes: Routes = [
@@ -64,9 +72,12 @@ const routes: Routes = [
 
       // MegacablePages
       {path: 'pages/inicio', component: InicioComponent},
+      {path: 'pages/arbolQa', component: ArbolQaComponent},
 
       // MegacableSoportes
-      {path: 'soportes/menu-principal', component: MenuPrincipalComponent},
+      {path: 'soportes/mainPrincipal', component: MainContainerComponent},
+      {path: 'soportes/XviewSoporte01', component: XviewSoporte01Component},
+
 
       // Dashboads
 
@@ -124,7 +135,7 @@ const routes: Routes = [
       {path: 'pages/forgot-password-boxed', component: ForgotPasswordBoxedComponent, data: {extraParameter: ''}},
     ]
   },
-  {path: '**', pathMatch: 'full', redirectTo: 'pages/inicio'}
+  {path: '**', pathMatch: 'full', redirectTo: '/pages/inicio'}
 ];
 
 @NgModule({

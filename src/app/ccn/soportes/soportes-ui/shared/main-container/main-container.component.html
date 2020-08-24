@@ -1,0 +1,285 @@
+<app-page-title [heading]="heading" [subheading]="subheading" [icon]="icon"></app-page-title>
+<div class="row">
+  <div class="col-md-12">
+    <div class="main-card mb-3 card">
+      <div class="card-body" *ngFor="let data of Datas">
+
+        <div [ngSwitch]="mostrarSw">  
+ 
+
+            <div *ngSwitchDefault id="inicio">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="mb-3 card card-body">
+                    <h5 class="card-title">{{data.unServicio}}</h5>
+                      <p>{{data.opcion1}}</p>
+                    <button class="btn btn-primary mt-2"
+                              (click)="mostrarSw = 1"
+                              *ngFor="let boton of Botones">
+                              {{boton.unServicio}}
+                    </button>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="mb-3 card card-body">
+                    <h5 class="card-title">{{data.dosServicio}}</h5>
+                      <p>{{data.opcion2}}</p>
+                    <button class="btn btn-primary mt-2"
+                            *ngFor="let boton of Botones"
+                            (click)="mostrarSw = 2">
+                            {{boton.dosServicio}}
+                    </button>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="mb-3 card card-body">
+                    <h5 class="card-title">{{data.tresServicio}}</h5>
+                      <p>{{data.opcion3}}</p>
+                    <button class="btn btn-primary mt-2" 
+                            *ngFor="let boton of Botones"
+                            (click)="mostrarSw = 3">
+                            {{boton.tresServicio}}
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div *ngSwitchCase="1" id="UnServicio">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="mb-3 card card-body">
+                    <h5 class="card-title">{{data.tv}}</h5>
+                      <p>{{data.opcion4}}</p>
+                    <button class="btn btn-primary mt-2"
+                            *ngFor="let boton of Botones"
+                            (click)="mostrarSw = 4"
+                            >{{boton.tv}}</button>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="mb-3 card card-body">
+                    <h5 class="card-title">{{data.inter}}</h5>
+                      <p>{{data.opcion5}}</p>
+                    <button class="btn btn-primary mt-2"
+                            *ngFor="let boton of Botones">
+                            {{boton.inter}}
+                    </button>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="mb-3 card card-body">
+                    <h5 class="card-title">{{data.tel}}</h5>
+                      <p>{{data.opcion6}}</p>
+                    <button class="btn btn-primary mt-2"
+                            *ngFor="let boton of Botones">
+                            {{boton.tel}}
+                    </button>
+                  </div>
+                </div>
+              </div>
+                <button class="btn btn-primary mt-2" 
+                        (click)="mostrarSw = Default">
+                        <i class="pe-7s-left-arrow"></i>
+                </button>
+            </div>
+
+            <div *ngSwitchCase="2" id="DosServicios">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="mb-3 card card-body">
+                    <h5 class="card-title">{{data.tvEinter}}</h5>
+                      <p>{{data.opcion7}}</p>
+                    <button class="btn btn-primary mt-2"
+                            *ngFor="let boton of Botones">
+                            {{boton.tvEinter}}
+                    </button>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="mb-3 card card-body">
+                    <h5 class="card-title">{{data.tvYtel}}</h5>
+                      <p>{{data.opcion9}}</p>
+                    <button class="btn btn-primary mt-2"
+                            *ngFor="let boton of Botones">
+                            {{boton.tvYtel}}
+                    </button>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="mb-3 card card-body">
+                    <h5 class="card-title">{{data.telEinter}}</h5>
+                      <p>{{data.opcion8}}</p>
+                    <button class="btn btn-primary mt-2"
+                            *ngFor="let boton of Botones">
+                            {{boton.telEinter}}
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn-primary mt-2" 
+                      (click)="mostrarSw = Default">
+                      <i class="pe-7s-left-arrow"></i>
+              </button>
+            </div>
+
+            <div  *ngSwitchCase="3" id="TresServicios">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="mb-3 card card-body">
+                    <h5 class="card-title">{{data.tv}}</h5>
+                      <p>{{data.opcion4}}</p>
+                    <button class="btn btn-primary mt-2"
+                            *ngFor="let boton of Botones"
+                            (click)="mostrarSw = 4"
+                            >{{boton.tv}}</button>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="mb-3 card card-body">
+                    <h5 class="card-title">{{data.inter}}</h5>
+                      <p>{{data.opcion5}}</p>
+                    <button class="btn btn-primary mt-2"
+                            *ngFor="let boton of Botones">
+                            {{boton.inter}}
+                    </button>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="mb-3 card card-body">
+                    <h5 class="card-title">{{data.tel}}</h5>
+                      <p>{{data.opcion6}}</p>
+                    <button class="btn btn-primary mt-2"
+                            *ngFor="let boton of Botones">
+                            {{boton.tel}}
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn-primary mt-2" 
+                      (click)="mostrarSw = Default">
+                      <i class="pe-7s-left-arrow"></i>
+              </button>
+            </div>
+
+            <div  *ngSwitchCase="4" id="Television">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="mb-3 card card-body">
+                    <h5 class="card-title">Análoga</h5>
+                      <p></p>
+                    <button class="btn btn-primary mt-2"
+                            *ngFor="let boton of Botones"
+                            (click)="mostrarSw = 6">
+                            {{boton.analogo}}
+                    </button>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="mb-3 card card-body">
+                    <h5 class="card-title">Digital</h5>
+                      <p></p>
+                    <button class="btn btn-primary mt-2"
+                            *ngFor="let boton of Botones"
+                            (click)="mostrarSw = 5">
+                            {{boton.digital}}
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn-primary mt-2" 
+                      (click)="mostrarSw = 1">
+                      <i class="pe-7s-left-arrow"></i>
+              </button>
+            </div>
+
+            <div  *ngSwitchCase="5" id="TvDigital">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="mb-3 card card-body">
+                    <h5 class="card-title">{{data.dto101}}</h5>
+                      <p></p>
+                    <button class="btn btn-primary mt-2"
+                            *ngFor="let boton of Botones"
+                            (click)="mostrarSw = 4"
+                            >{{boton.dto101}}</button>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="mb-3 card card-body">
+                    <h5 class="card-title">{{data.pds1100}}</h5>
+                      <p></p>
+                    <button class="btn btn-primary mt-2"
+                            *ngFor="let boton of Botones">
+                            {{boton.pds1100}}
+                    </button>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="mb-3 card card-body">
+                    <h5 class="card-title">{{data.xview}}</h5>
+                      <p></p>
+                    <button class="btn btn-primary mt-2"
+                            *ngFor="let boton of Botones"
+                            (click)="mostrarSw = 7">
+                            {{boton.xview}}
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn-primary mt-2" 
+                      (click)="mostrarSw = 4">
+                      <i class="pe-7s-left-arrow"></i>
+              </button>
+            </div>
+
+            <div  *ngSwitchCase="6" id="TvAnaloga">
+              Servicio Analogo
+              <button class="btn btn-primary mt-2" 
+                      (click)="mostrarSw = 4">
+                      <i class="pe-7s-left-arrow"></i>
+              </button>
+            </div>
+
+            <div  *ngSwitchCase="7" id="Xview">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="mb-3 card card-body">
+                    <h5 class="card-title">{{data.xviewSoporte1}}</h5>
+                      <p></p>
+                    <a class="btn btn-primary mt-2"
+                            *ngFor="let boton of Botones"
+                            routerLink="/soportes/XviewSoporte01"
+                            >{{boton.soporte}}</a>
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn-primary mt-2" 
+                      (click)="mostrarSw = 5">
+                      <i class="pe-7s-left-arrow"></i>
+              </button>
+            </div>
+
+            <div  *ngSwitchCase="8" id="">
+              opcion libre
+              <button class="btn btn-primary mt-2" 
+                      (click)="mostrarSw = Default">
+                      <i class="pe-7s-left-arrow"></i>
+              </button>
+            </div>
+
+            <div  *ngSwitchCase="9" id="">
+              opcion libre
+              <button class="btn btn-primary mt-2" 
+                      (click)="mostrarSw = Default">
+                      <i class="pe-7s-left-arrow"></i>
+              </button>
+            </div>
+
+
+        </div>
+  
+      </div>
+    </div>
+  </div>
+</div>
