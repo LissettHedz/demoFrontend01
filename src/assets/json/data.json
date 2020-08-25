@@ -1,0 +1,41 @@
+[
+    {
+      "buscarSuscriptor":"Busqueda de Suscriptor",
+      "sucursal":"Sucursal",
+      "numSuscriptor":"Número de suscriptor",
+      "nombre":"Nombre",
+      "apellidoPaterno":"Apellido Paterno",
+      "apellidoMaterno":"Apellido Materno",
+      "unServicio":"Un Servicio",
+      "dosServicio":"Dos Servicio",
+      "tresServicio":"Tres Servicio",
+      "tv":"Televisión",
+      "inter":"Internet",
+      "tel":"Telefonía",
+      "tvEinter":"Televisión - Internet",
+      "tvYtel":"Televisión - Telefonía",
+      "telEinter":"Internet - Telefonía",
+      "analoga":"Análoga",
+      "digital":"Digital",
+      "dto101":"Motorola DTO-101",
+      "pds1100":"Cisco Pds-1100",
+      "pds2140":"Cisco Pds-2140",
+      "xview":"Xview",
+
+
+      "opcion1":"Cliente reporta falla de un servicio",
+      "opcion2":"Cliente reporta falla de dos servicios",
+      "opcion3":"Cliente reporta falla de tres servicios",
+      "opcion4":"Cliente reporta falla en su servicio de televisión",
+      "opcion5":"Cliente reporta falla en su servicio de internet",
+      "opcion6":"Cliente reporta falla en su servicio de telefonía",
+      "opcion7":"Cliente reporta falla en su servicio de televisión e internet",
+      "opcion8":"Cliente reporta falla en su servicio de televisión y telefonía",
+      "opcion9":"Cliente reporta falla en su servicio de internet y telefonía",
+
+
+      "xviewSoporte1":"Sin señal de cable coaxial"
+    }
+
+ ]
+ 

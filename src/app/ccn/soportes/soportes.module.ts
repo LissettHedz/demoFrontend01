@@ -1,13 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { MenuPrincipalComponent } from './menu-principal/menu-principal.component';
-import { XviewNoCoaxialCableSignalComponent } from './servicioTelevision/digital/XviewNoCoaxialCableSignal/xview-no-coaxial-cable-signal/xview-no-coaxial-cable-signal.component';
+import { MainContainerComponent } from './soportes-ui/shared/main-container/main-container.component';
+import { XviewSoporte01Component } from './soportes-ui/television/xview-soporte01/xview-soporte01.component';
 
 
 
 @NgModule({
-  declarations: [MenuPrincipalComponent, XviewNoCoaxialCableSignalComponent],
+  declarations: [
+    MainContainerComponent,
+    XviewSoporte01Component
+  ],
   imports: [
     CommonModule
   ]
